@@ -1,0 +1,261 @@
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       
+
+        <!-- Style sheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    /* Set height and width of image buttons */
+    .image-button {
+      height: 100px;
+      width: 100px;
+    }
+
+    /* Apply margin and padding to image buttons */
+    .image-button img {
+      margin: 5px;
+      padding: 5px;
+    }
+
+    /* Apply tada animation on hover */
+    .image-button:hover img {
+      animation: tada 1s;
+    }
+
+    .image {
+      float: right;
+      width: 50%;
+      padding: 0 10px;
+    }
+
+    .caption {
+      clear: both;
+      text-align: center;
+    }
+
+    /* Keyframes for tada animation */
+    @keyframes tada {
+      0% {
+        transform: scale3d(1, 1, 1);
+      }
+
+      10%,
+      20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      }
+
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      }
+
+      40%,
+      60%,
+      80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      }
+
+      100% {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+
+        <title>Ethan McKellips</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(225, 147, 78);">
+        <a class="navbar-brand fw-bold" href="#">Ethan McKellips</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container mt-5" id="about">
+        <h1>Welcome to my website!</h1>
+        <p>Hello! Welcome to my professional website. My name is Ethan McKellips. Feel free a look around.</p>
+      </div>
+
+      <div class="container mt-5" id="education" >
+        <h2>Education</h2>
+        <img class="image" src="bascom.jpg"  alt="Bascom Hill">
+        <p>I am currently pursuing a B.S. in Computer Sciences at the University of Wisconsin-Madison. There truly is not a better place I would want to 
+            get my education. From spending time with friends by Lake Mendota to jumping around at Camp Randall, there is not a beter place I would pursue
+            my degree. This great university has helped me learn so much of what is necessary to succeed in software development.
+        </p>
+        
+        <h5>Relevant Courses:</h5>
+        <ul>
+            <li>
+                CS 200 - Programming I
+            </li>
+            <li>
+                CS 240 - Discrete Mathematics
+            </li>
+            <li>
+                CS 252 - Introduction to Computer Engineering
+            </li>
+            <li>
+                CS 300 - Programming II
+            </li>
+            <li>
+                CS 354 - Machine Organization and Programming
+            </li>
+            <li>
+                CS 400 - Programming III
+            </li>
+            <li>
+                CS 537 - Introduction to Operating Systems
+            </li>
+            <li>
+                CS 540 - Artificial Intelligence
+            </li>
+            <li>
+                CS 570 - Human-Computer Interaction
+            </li>
+            <li>
+                CS 577 - Algorithms
+            </li>
+        </ul>
+      </div>
+
+      <div class="container mt-5" id="experience">
+        <h2>Experience</h2>
+        <p>Even though I am currrently pursuing a degree, I am very fortunate to have kicked off my career in the tech industry. Below is my relevant experience.</p>
+        <h5>Data Visualization and Analytics Intern - Fenster Analytics </h5>
+        <h6><i>June 2022 - January 2023</i></h6>
+        <p>Add description here</p>
+        <h5>Data and Analytics Co-op - Sub-Zero Group, Inc.</h5>
+        <h6><i>January 2023 - Present</i></h6>
+        <p>Add description here</p>
+      </div>
+
+      <div class="container mt-5" id="skills">
+        <h2>Skills</h2>
+        <p>Below are some of the skills I have gained througout both my time as a student and my experience in the real world.
+        </p>
+        <h5 style="text-align:center;">Languages</h5>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+
+              <!-- Image buttons with tada animation on hover -->
+              <div class="d-flex justify-content-center">
+                <div class="image-button">
+                  <img src="java.jpg" alt="Java" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="python.jpg" alt="IPython" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="c.jpg" alt="C" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="csharp.jpg" alt="C Sharp" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="bash.jpg" alt="Bourne-Again Shell" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="sql.jpg" alt="SQL" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="javascript.jpg" alt="JavaScript" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="css.jpg" alt="CSS3" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="html.jpg" alt="HTML5" class="img-fluid">
+                </div>
+                <div class="image-button">
+                  <img src="r.jpg" alt="R Language" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <h5 style="text-align:center;">Software</h5>
+            
+            <div class="container">
+              <div class="row">
+                <div class="col">
+    
+                  <!-- Image buttons with tada animation on hover -->
+                  <div class="d-flex justify-content-center">
+                    <div class="image-button">
+                      <img src="vscode.jpg" alt="Visual Studio Code" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="pycharm.jpg" alt="Pycharm" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="intellij.jpg" alt="dbt Cloud" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="snowflake.jpg" alt="Snowflake" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="dbt.jpg" alt="dbt Cloud" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="github-logo.jpg" alt="Github" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="office.jpg" alt="Microsoft Office" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="pbi.jpg" alt="Power BI" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="sqlserver.jpg" alt="SQL Server" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="jira.jpg" alt="JIRA" class="img-fluid">
+                    </div>
+                    <div class="image-button">
+                      <img src="azure.jpg" alt="Microsoft Azure" class="img-fluid">
+                    </div>
+                    </div>
+            <h5 style="text-align:center;">Technologies</h5>
+
+      <div class="container mt-5" id="contact">
+        <h2>Contact</h2>
+        <p>Below is my contact information. I look forward to connecting with you!</p>
+        <a href="https://www.linkedin.com/in/ethanmckellips/">
+            <img src="linkedin-logo.jpg" alt="Clickable Image" height="50" width="50">
+        </a>
+        <a href="https://github.com/emckellips">
+            <img src="github-logo.jpg" alt="Clickable Image" height="57" width="57">
+        </a>
+      </div>
+
+
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
