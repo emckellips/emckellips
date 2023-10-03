@@ -1,0 +1,45 @@
+/* Dark theme */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Set height and width of image buttons */
+.image-button {
+    height: 100px;
+    width: 100px;
+}
+
+/* Apply margin and padding to image buttons */
+.image-button img {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Apply tada animation on hover */
+.image-button:hover img {
+    animation: tada 1s;
+    border: 1px solid #ffffff;
+}
+
+.image {
+    float: right;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.caption {
+    clear: both;
+    text-align: center;
+}
+
+/* Keyframes for tada animation */
+@keyframes tada {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    /* ... (rest of your keyframes code) ... */
+}
+
+/* Add any other styles you want here */
+
